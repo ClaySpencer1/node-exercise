@@ -6,7 +6,7 @@ const router = express.Router();
 router.get("/:id?", async (req, res, next) => {
   let { id } = req.params;
   let data;
-
+//
   if (id) {
     data = await products.findOne(id);
   } else {

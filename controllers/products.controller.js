@@ -19,3 +19,5 @@ export const updateOne = async (productId, product) => {
 export const removeOne = async (productId) => {
   return await query("DELETE FROM products WHERE ProductID = ?", [productId]);
 };
+
+//
